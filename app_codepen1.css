@@ -1,0 +1,185 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+font-family: 'Mate SC', serif;
+  box-sizing : border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  color: #014f86;
+}
+
+a:hover{
+  color: #00bbf9;
+}
+
+body{
+background-color : #8ecae6;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  min-height : 100vh;
+  align-items : center;
+}
+
+img{
+  width: 1000px;
+    height: 1000px;
+  object-fit: cover;
+  
+}
+
+.ronaldo-image, .messi-image, .neymar-image{
+  max-width: 100%;
+  margin-bottom: 25px;
+}
+
+.high{
+  font-weight: 700;
+}
+
+.panel{
+  background-color : white;
+  display : flex;
+  flex-direction: column;
+  border-radius : 10px;
+  width: 100%;
+  max-width: 3000px;
+  /* padding: 15px 25px; */
+  text-align: center;
+  border-radius: 30px;
+  
+}
+
+.name{
+    border-bottom: 1px solid #248277;
+    margin-bottom: 50px;
+    }
+
+  .name:last-child{
+    border-bottom: none;
+  }
+
+.foot-name{
+  color: #6b705c;
+  font-weight: 600;
+  letter-spacing: 1px;
+  
+  font-size: 60px;
+  padding: 15px 0;
+  line-height: 1.5;
+}
+
+.info{
+  color: #001219;
+  margin: 25px 0;
+  font-size: 50px;
+}
+
+.nation{
+  margin-bottom: 5px;
+}
+
+.club{
+  margin-bottom: 5px;
+}
+
+.vote{
+  color: #348efe;
+  background-color: white;
+  border: 1px solid #348efe;
+  margin-bottom: 10px;
+  padding: 30px 100px;
+  font-size: 60px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 30px;
+  margin-bottom: 50px;
+  
+}
+
+.vote:hover{
+  background-color: #348efe;
+  color: white;
+}
+
+.vote-messi{
+  margin-top: 70px;
+}
+
+.nation, .club, .c-club{
+  color: #013a63;
+  letter-spacing: 1px;
+ 
+  padding: 15px 0;
+  line-height: 1.5;
+}
+
+@media (min-width: 4000px)
+{
+  .panel{
+    flex-direction: row;
+  }
+  .name{
+    border-bottom: none;
+    border-right: 1px solid #e2eafc;
+    padding: 25px 50px;
+  }
+  .name:last-child{
+    border-right: none;
+  }
+  .foot-name{
+    border-bottom: 1px solid #248277;
+  }
+}
